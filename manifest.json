@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Click & Laugh",
+  "description": "Hear the sound of laughter? That's your friendly reminder to laugh once a day. Its good for you. Click the icon in the toolbar for an infectious video of people laughing uncontrollably!",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts":["background.js"]
+    },
+    "icons": {
+      "128": "icon128.PNG",
+      "48": "icon48.PNG",
+      "16": "icon16.PNG"
+    },
+  "content_scripts": [
+    {
+      "js": ["jquery.min.js", "popup.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+
+  "permissions": [
+    "http://*/",
+    "https://www.googleapis.com/youtube/v3/*",
+    "http://www.googleapis.com/youtube/v3/*"
+  ]
+}

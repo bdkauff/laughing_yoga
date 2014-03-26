@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+    <audio style='display:hidden;' id="female_laugh" src="https://s3.amazonaws.com/Laughing_yoga_extensions_sounds/Laughing_female.mp3" type="audio/mp3">Your browser does not support the &#60;audio&#62; element.</audio>
+    <audio style='display:hidden;' id="group_laugh" src="https://s3.amazonaws.com/Laughing_yoga_extensions_sounds/Laughing_crowd.wav" type="audio/wav">Your browser does not support the &#60;audio&#62; element.</audio>
+    <audio style='display:hidden;' id="child_laugh" src="https://s3.amazonaws.com/Laughing_yoga_extensions_sounds/Laughing_child.wav" type="audio/wav">Your browser does not support the &#60;audio&#62; element.</audio>
+  </body>
+</html>
+
