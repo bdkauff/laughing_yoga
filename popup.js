@@ -30,6 +30,7 @@ var laughGenerator = {
       iframe.setAttribute('width', "640")
       iframe.setAttribute('height', "360")
       iframe.setAttribute('frameborder', "0")
+      iframe.setAttribute('allowFullScreen',"")
       iframes.push(iframe)
     }
     // grab a random iframe embed link and create an iframe element to append to the html body
